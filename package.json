@@ -1,0 +1,34 @@
+{
+  "name": "taro-plugin-markdown",
+  "version": "0.0.1",
+  "description": "markdown-it plugin for Taro framework!",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev:js": "tsup -w",
+    "build": "",
+    "build:mv": "mv src/styles/index.less dist/styles/index.less",
+    "build:js": "tsup",
+    "build:css": "lessc src/styles/index.less dist/styles/index.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HerbertHe/taro-plugin-markdown.git"
+  },
+  "keywords": [
+    "markdown-it",
+    "markdown-it-plugin",
+    "taro",
+    "taro-components"
+  ],
+  "author": "HerbertHe <Herbert.He0229@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HerbertHe/taro-plugin-markdown/issues"
+  },
+  "homepage": "https://github.com/HerbertHe/taro-plugin-markdown#readme",
+  "devDependencies": {
+    "less": "^4.1.2",
+    "tsup": "^5.2.1"
+  }
+}
