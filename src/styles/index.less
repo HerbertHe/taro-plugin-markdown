@@ -1,0 +1,95 @@
+// 定义颜色
+@theme-color: red;
+@theme-bg-color: #e0e0e0;
+@link-color: #03a9f4;
+
+// 定义尺寸
+@base-size: 16px;
+
+.taro-markdown {
+    margin: 20px 20px 0;
+    font-size: @base-size;
+
+    // 定义标题
+    .h5-h1,
+    .h5-h2,
+    .h5-h3,
+    .h5-h4,
+    .h5-h5,
+    .h5-h6 {
+        font-weight: 700;
+        padding: 5px 0;
+    }
+
+    .h5-h1 {
+        font-size: calc(@base-size + 8px);
+    }
+
+    .h5-h2 {
+        font-size: calc(@base-size + 4px);
+    }
+
+    .h5-h4 {
+        font-size: calc(@base-size - 2px);
+    }
+
+    .h5-h5 {
+        font-size: calc(@base-size - 4px);
+    }
+
+    .h5-h6 {
+        font-size: calc(@base-size - 6px);
+    }
+
+    // 段落样式
+    .h5-p {
+        margin: 5px 0;
+
+        // 文字样式
+        .h5-em {
+            font-style: italic;
+        }
+
+        .h5-strong {
+            font-weight: 600;
+        }
+
+        .h5-s {
+            text-decoration: line-through;
+        }
+
+        .h5-u {
+            text-decoration: underline;
+        }
+
+        .h5-kbd {
+            padding: 2px 4px;
+            background-color: @theme-bg-color;
+            border-radius: 3px;
+            border: 1px solid #757575;
+            border-bottom-width: 3px;
+        }
+
+        // 无链接作用, 需要注意
+        .h5-a {
+            color: @link-color;
+            text-decoration: underline;
+        }
+    }
+
+    // 引用块样式
+    .h5-blockquote {
+        background-color: @theme-bg-color;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    // 列表样式
+    .h5-ul {
+        list-style: disc inside;
+        .h5-li {
+        }
+    }
+
+    // .h5
+}
